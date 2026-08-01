@@ -15,17 +15,17 @@ import DonationPage from './pages/DonationPage.jsx'
 import PartnerDashboard from './pages/PartnerDashboard.jsx'
 
 function App() {
-  useEffect(() => {
-    // Check if running on localhost
-    if (window.location.hostname === 'localhost' || 
-        window.location.hostname === '127.0.0.1') {
+  // useEffect(() => {
+  //   // Check if running on localhost
+  //   if (window.location.hostname === 'localhost' || 
+  //       window.location.hostname === '127.0.0.1') {
       
-      if (import.meta.env.VITE_LOCK_LOCAL_HOST === 'true') {
-        // Block localhost
-        window.location.href = 'https://feedwell-frontend.vercel.app';
-      }
-    }
-  }, []);
+  //     if (import.meta.env.VITE_LOCK_LOCAL_HOST === 'true') {
+  //       // Block localhost
+  //       window.location.href = 'https://feedwell-frontend.vercel.app';
+  //     }
+  //   }
+  // }, []);
 
   return (
     <AuthProvider>

@@ -1,0 +1,378 @@
+/* ===========================
+   Profile Page
+=========================== */
+.profile-page {
+  min-height: 100vh;
+  background: #f8fffe;
+  padding-bottom: 60px;
+}
+
+/* ===========================
+   Profile Header
+=========================== */
+.profile-header {
+  background: linear-gradient(
+    135deg, #1b4332, #2d6a4f, #40916c);
+  padding: 60px 20px 80px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  margin: 0 auto 16px;
+  border: 4px solid rgba(255,255,255,0.4);
+}
+
+.profile-name {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.profile-email {
+  font-size: 15px;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 16px;
+}
+
+.role-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
+/* ===========================
+   Profile Container
+=========================== */
+.profile-container {
+  max-width: 900px;
+  margin: -40px auto 0;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ===========================
+   Green Score Card
+=========================== */
+.green-score-card {
+  background: white;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 8px 32px
+    rgba(44,106,79,0.15);
+}
+
+.green-score-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.green-score-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1b4332;
+}
+
+.green-level-badge {
+  background: linear-gradient(
+    135deg, #2d6a4f, #52b788);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.green-score-display {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.green-score-number {
+  font-size: 64px;
+  font-weight: 900;
+  color: #2d6a4f;
+  line-height: 1;
+}
+
+.green-score-info {
+  flex: 1;
+}
+
+.green-score-label {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 8px;
+}
+
+.progress-bar {
+  background: #e0e0e0;
+  border-radius: 10px;
+  height: 12px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(
+    135deg, #2d6a4f, #52b788);
+  border-radius: 10px;
+  transition: width 1s ease;
+}
+
+.progress-text {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.green-impact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.impact-item {
+  background: #f0fdf4;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+}
+
+.impact-emoji {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.impact-value {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1b4332;
+}
+
+.impact-label {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+/* ===========================
+   Stats Grid
+=========================== */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.stat-item {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 20px
+    rgba(44,106,79,0.1);
+  transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-4px);
+}
+
+.stat-item-emoji {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.stat-item-value {
+  font-size: 24px;
+  font-weight: 800;
+  color: #1b4332;
+  margin-bottom: 4px;
+}
+
+.stat-item-label {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+/* ===========================
+   Recent Orders
+=========================== */
+.recent-orders-card {
+  background: white;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 8px 32px
+    rgba(44,106,79,0.1);
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1b4332;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.view-all-link {
+  font-size: 13px;
+  color: #52b788;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.recent-order-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.recent-order-item:last-child {
+  border-bottom: none;
+}
+
+.recent-order-emoji {
+  font-size: 32px;
+  background: #f0fdf4;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recent-order-details {
+  flex: 1;
+}
+
+.recent-order-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1b4332;
+}
+
+.recent-order-date {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.recent-order-price {
+  font-size: 15px;
+  font-weight: 700;
+  color: #2d6a4f;
+}
+
+/* ===========================
+   Profile Details Card
+=========================== */
+.profile-details-card {
+  background: white;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 8px 32px
+    rgba(44,106,79,0.1);
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-icon {
+  font-size: 24px;
+  width: 44px;
+  height: 44px;
+  background: #f0fdf4;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-content {
+  flex: 1;
+}
+
+.detail-label {
+  font-size: 12px;
+  color: #6c757d;
+  margin-bottom: 2px;
+}
+
+.detail-value {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1b4332;
+}
+
+/* ===========================
+   Edit Profile Button
+=========================== */
+.edit-profile-btn {
+  width: 100%;
+  background: linear-gradient(
+    135deg, #2d6a4f, #52b788);
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.edit-profile-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px
+    rgba(44,106,79,0.4);
+}
+
+/* ===========================
+   Responsive
+=========================== */
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .green-impact {
+    grid-template-columns: 1fr 1fr;
+  }
+  .green-score-number {
+    font-size: 48px;
+  }
+}

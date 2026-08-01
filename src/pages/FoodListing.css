@@ -1,0 +1,306 @@
+/* ===========================
+   Food Listing Page
+=========================== */
+.food-page {
+  min-height: 100vh;
+  background: #f8fffe;
+  padding-bottom: 60px;
+}
+
+/* ===========================
+   Page Header
+=========================== */
+.food-header {
+  background: linear-gradient(
+    135deg, #1b4332, #2d6a4f);
+  padding: 48px 20px;
+  text-align: center;
+  color: white;
+}
+
+.food-header-emoji {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.food-header-title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.food-header-subtitle {
+  font-size: 16px;
+  color: rgba(255,255,255,0.8);
+}
+
+/* ===========================
+   Category Filter
+=========================== */
+.filter-section {
+  background: white;
+  padding: 20px;
+  box-shadow: 0 2px 10px
+    rgba(0,0,0,0.05);
+  position: sticky;
+  top: 70px;
+  z-index: 100;
+}
+
+.filter-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 2px solid #e0e0e0;
+  background: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #6c757d;
+}
+
+.filter-btn:hover {
+  border-color: #52b788;
+  color: #2d6a4f;
+}
+
+.filter-btn.active {
+  background: linear-gradient(
+    135deg, #2d6a4f, #52b788);
+  border-color: transparent;
+  color: white;
+  box-shadow: 0 4px 15px
+    rgba(44,106,79,0.3);
+}
+
+/* ===========================
+   Food Grid
+=========================== */
+.food-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* ===========================
+   Food Card
+=========================== */
+.food-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px
+    rgba(44,106,79,0.1);
+  transition: all 0.3s ease;
+}
+
+.food-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px
+    rgba(44,106,79,0.2);
+}
+
+.food-card-image {
+  background: linear-gradient(
+    135deg, #d8f3dc, #b7e4c7);
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+  position: relative;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: linear-gradient(
+    135deg, #f4845f, #e76f51);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.category-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.category-veg {
+  background: #d8f3dc;
+  color: #1b4332;
+}
+
+.category-nonveg {
+  background: #ffe8df;
+  color: #e63946;
+}
+
+.category-dessert {
+  background: #fff3cd;
+  color: #d4a017;
+}
+
+.category-beverage {
+  background: #e8f4fd;
+  color: #0077b6;
+}
+
+.food-card-body {
+  padding: 20px;
+}
+
+.food-card-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1b4332;
+  margin-bottom: 4px;
+}
+
+.food-card-restaurant {
+  font-size: 13px;
+  color: #6c757d;
+  margin-bottom: 16px;
+}
+
+.food-card-price {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.price-original {
+  font-size: 14px;
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+.price-discounted {
+  font-size: 24px;
+  font-weight: 900;
+  color: #2d6a4f;
+}
+
+.food-card-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.green-points-badge {
+  background: #d8f3dc;
+  color: #1b4332;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.add-cart-btn {
+  width: 100%;
+  background: linear-gradient(
+    135deg, #2d6a4f, #52b788);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-cart-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px
+    rgba(44,106,79,0.4);
+}
+
+/* ===========================
+   Empty State
+=========================== */
+.empty-state {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.empty-emoji {
+  font-size: 80px;
+  margin-bottom: 24px;
+}
+
+.empty-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1b4332;
+  margin-bottom: 8px;
+}
+
+.empty-subtitle {
+  font-size: 16px;
+  color: #6c757d;
+}
+
+/* ===========================
+   Results Count
+=========================== */
+.results-count {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+@media (max-width: 768px) {
+  .food-header-title {
+    font-size: 26px;
+  }
+  .food-grid {
+    grid-template-columns: 1fr;
+  }
+  .filter-container {
+    gap: 8px;
+  }
+  .filter-btn {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+}

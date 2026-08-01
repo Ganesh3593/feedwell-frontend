@@ -1,0 +1,218 @@
+.register-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+    135deg, #d8f3dc, #b7e4c7, #95d5b2);
+    padding: 20px;
+}
+
+.register-card{
+ background: white;
+ border-radius: 24px;
+ padding: 48px 40px;
+ width: 100%;
+ max-width: 480px;
+ box-shadow: 0 20px 60px
+rgba(44, 106, 79, 0.2);
+} 
+
+.register-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.register-logo {
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+.register-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: #1b4332;
+  margin-bottom: 8px;
+}
+.register-subtitle {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+ /* Form */
+
+ .register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.form-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1b4332;
+}
+
+.form-input {
+  padding: 14px 18px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+  background: #fafafa;
+}
+
+.form-input:focus {
+  border-color: #52b788;
+  background: white;
+  box-shadow: 0 0 0 4px
+    rgba(82, 183, 136, 0.1);
+}
+
+/* ===========================
+   Role Selection
+=========================== */
+.role-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1b4332;
+  margin-bottom: 4px;
+}
+
+.role-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.role-card {
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #fafafa;
+}
+
+.role-card:hover {
+  border-color: #52b788;
+  background: #f0fdf4;
+}
+
+.role-card.selected {
+  border-color: #2d6a4f;
+  background: #d8f3dc;
+}
+
+.role-icon {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.role-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1b4332;
+}
+
+.role-desc {
+  font-size: 11px;
+  color: #6c757d;
+  margin-top: 2px;
+}
+
+/* ===========================
+   Register Button
+=========================== */
+.register-btn {
+  background: linear-gradient(
+    135deg, #2d6a4f, #52b788);
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+
+.register-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px
+    rgba(44, 106, 79, 0.4);
+}
+
+.register-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ===========================
+   Alerts
+=========================== */
+.alert-error {
+  background: #ffe0e0;
+  color: #c1121f;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.alert-success {
+  background: #d8f3dc;
+  color: #1b4332;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* ===========================
+   Footer Link
+=========================== */
+.register-footer {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.register-footer a {
+  color: #2d6a4f;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.register-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===========================
+   Divider
+=========================== */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background: #e0e0e0;
+}
+
+.divider-text {
+  font-size: 13px;
+  color: #aaa;
+}

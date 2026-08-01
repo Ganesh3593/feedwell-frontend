@@ -1,0 +1,365 @@
+/* ===========================
+   Hero Section
+=========================== */
+.hero-section {
+  background: linear-gradient(
+    135deg, #1b4332, #2d6a4f, #40916c);
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle, rgba(82,183,136,0.1) 0%,
+    transparent 60%);
+  animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+}
+
+.hero-emoji {
+  font-size: 80px;
+  margin-bottom: 24px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.hero-title {
+  font-size: 56px;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.hero-title span {
+  color: #95d5b2;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-btn-primary {
+  background: linear-gradient(
+    135deg, #52b788, #40916c);
+  color: white;
+  border: none;
+  padding: 16px 36px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 8px 25px
+    rgba(0,0,0,0.3);
+}
+
+.hero-btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px
+    rgba(0,0,0,0.4);
+}
+
+.hero-btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 16px 36px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.hero-btn-secondary:hover {
+  background: white;
+  color: #1b4332;
+  transform: translateY(-3px);
+}
+
+/* ===========================
+   Stats Section
+=========================== */
+.stats-section {
+  background: white;
+  padding: 60px 20px;
+}
+
+.stats-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  text-align: center;
+}
+
+.stat-card {
+  padding: 32px 20px;
+  border-radius: 20px;
+  background: linear-gradient(
+    135deg, #f0fdf4, #dcfce7);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-emoji {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.stat-number {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1b4332;
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+/* ===========================
+   How It Works
+=========================== */
+.how-section {
+  background: #f8fffe;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-header {
+  margin-bottom: 48px;
+}
+
+.section-tag {
+  display: inline-block;
+  background: #d8f3dc;
+  color: #1b4332;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1b4332;
+  margin-bottom: 12px;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #6c757d;
+}
+
+.steps-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  position: relative;
+}
+
+.step-card {
+  background: white;
+  border-radius: 20px;
+  padding: 36px 24px;
+  box-shadow: 0 8px 32px
+    rgba(44,106,79,0.1);
+  transition: transform 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-8px);
+}
+
+.step-number {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(
+    135deg, #2d6a4f, #52b788);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0 auto 16px;
+}
+
+.step-emoji {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.step-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1b4332;
+  margin-bottom: 8px;
+}
+
+.step-desc {
+  font-size: 14px;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+/* ===========================
+   Features Section
+=========================== */
+.features-section {
+  background: linear-gradient(
+    135deg, #1b4332, #2d6a4f);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.features-section .section-title {
+  color: white;
+}
+
+.features-section .section-subtitle {
+  color: rgba(255,255,255,0.7);
+}
+
+.features-section .section-tag {
+  background: rgba(255,255,255,0.2);
+  color: white;
+}
+
+.features-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.feature-card {
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 32px 20px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.feature-card:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-5px);
+}
+
+.feature-emoji {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.feature-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.feature-desc {
+  font-size: 13px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.5;
+}
+
+/* ===========================
+   Footer
+=========================== */
+.footer {
+  background: #0f2d1f;
+  padding: 32px 20px;
+  text-align: center;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: #52b788;
+  margin-bottom: 8px;
+}
+
+.footer-tagline {
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 16px;
+}
+
+.footer-copy {
+  font-size: 13px;
+  color: rgba(255,255,255,0.3);
+}
+
+/* ===========================
+   Responsive
+=========================== */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 36px;
+  }
+  .hero-emoji {
+    font-size: 60px;
+  }
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .steps-container {
+    grid-template-columns: 1fr;
+  }
+  .features-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

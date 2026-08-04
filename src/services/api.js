@@ -26,8 +26,8 @@ const api = axios.create({
 api.interceptors.request.use(
   (config) => {
     // Get token from localStorage (persists!)
-    const token = sessionStorage.getItem('token');
-   // const token = localStorage.getItem('token'); only this line chanege
+  //  const token = sessionStorage.getItem('token');
+    const token = localStorage.getItem('token'); 
 
     console.log('Token being sent:', token ? 'exists' : 'null');
 
@@ -55,7 +55,7 @@ api.interceptors.response.use(
     // If server returns 401 (Unauthorized)
     if (error.response?.status === 401) {
       console.log('401 Unauthorized - Token expired');
-      sessionStorage.removeItem('token');
+      localStorage.removeItem('token');
       window.location.href = '/login';
     }
 

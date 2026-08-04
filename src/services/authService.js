@@ -6,7 +6,7 @@ export const register = async (userData) => {
     const data = response.data;
 
     if (data.token) {
-      sessionStorage.setItem('token', data.token);
+      localStorage.setItem('token', data.token);
     }
 
     return {
@@ -37,8 +37,8 @@ export const login = async (credentials) => {
     console.log('✅ LOGIN: Response received:', data);
 
     if (data.token) {
-      sessionStorage.setItem('token', data.token);
-      console.log('✅ Token saved to sessionStorage');
+      localStorage.setItem('token', data.token);
+      console.log('✅ Token saved to localStorage');
     }
 
     return {
@@ -64,15 +64,15 @@ export const login = async (credentials) => {
 };
 
 export const logout = () => {
-  sessionStorage.removeItem('token');
+  localStorage.removeItem('token');
 };
 
 export const getToken = () => {
-  return sessionStorage.getItem('token');
+  return localStorage.getItem('token');
 };
 
 export const isLoggedIn = () => {
-  const token = sessionStorage.getItem('token');
+  const token = localStorage.getItem('token');
   if (!token) return false;
 
   try {

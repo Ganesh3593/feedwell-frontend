@@ -45,9 +45,6 @@ const Navbar = () => {
               <Link to="/food" className="nav-link">
                 🍱 Browse Food
               </Link>
-              <Link to="/donate" className="nav-link">
-                🙏 Donate
-              </Link>
             </>
           )}
 
@@ -56,9 +53,6 @@ const Navbar = () => {
             <>
               <Link to="/food" className="nav-link">
                 🍱 Browse Food
-              </Link>
-              <Link to="/donate" className="nav-link">
-                🙏 Donate
               </Link>
               <Link to="/cart" className="nav-link">
                 🛒 Cart

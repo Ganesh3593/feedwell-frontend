@@ -16,7 +16,7 @@ import axios from 'axios';
 
 // Step 1: Create axios instance
 const api = axios.create({
-  baseURL: 'https://feedwell-backend.onrender.com',
+  baseURL: 'https://feedwell-backend.onrender.com/api',
   withCredentials: false
 });
 

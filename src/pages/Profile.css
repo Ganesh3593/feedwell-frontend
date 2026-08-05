@@ -1,39 +1,33 @@
-/* ===========================
-   Profile Page
-=========================== */
 .profile-page {
   min-height: 100vh;
   background: #f8fffe;
   padding-bottom: 60px;
 }
 
-/* ===========================
-   Profile Header
-=========================== */
 .profile-header {
   background: linear-gradient(
     135deg, #1b4332, #2d6a4f, #40916c);
-  padding: 60px 20px 80px;
+  padding: 40px 20px 40px; 
   text-align: center;
   color: white;
   position: relative;
 }
 
 .profile-avatar {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   background: rgba(255,255,255,0.2);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 48px;
-  margin: 0 auto 16px;
+  font-size: 44px;
+  margin: 0 auto 12px;
   border: 4px solid rgba(255,255,255,0.4);
 }
 
 .profile-name {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 800;
   margin-bottom: 6px;
 }
@@ -41,7 +35,7 @@
 .profile-email {
   font-size: 15px;
   color: rgba(255,255,255,0.8);
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .role-badge {
@@ -55,12 +49,9 @@
   border: 1px solid rgba(255,255,255,0.4);
 }
 
-/* ===========================
-   Profile Container
-=========================== */
 .profile-container {
   max-width: 900px;
-  margin: -40px auto 0;
+  margin: 20px auto 0;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
@@ -339,27 +330,48 @@
 }
 
 /* ===========================
-   Edit Profile Button
+   Edit Profile & Partner Button
 =========================== */
-.edit-profile-btn {
-  width: 100%;
+.edit-profile-btn, .add-food-btn {
   background: linear-gradient(
     135deg, #2d6a4f, #52b788);
   color: white;
   border: none;
-  padding: 16px;
+  padding: 14px 28px;
   border-radius: 12px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-top: 20px;
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(44,106,79,0.2);
 }
 
-.edit-profile-btn:hover {
+.edit-profile-btn:hover, .add-food-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px
     rgba(44,106,79,0.4);
+}
+
+/* ===========================
+   Partner Extra Status Badges
+=========================== */
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.badge-available {
+  background-color: #d8f3dc;
+  color: #1b4332;
+}
+
+.badge-pending {
+  background-color: #fff3cd;
+  color: #856404;
 }
 
 /* ===========================

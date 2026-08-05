@@ -1,0 +1,147 @@
+/* ==========================================
+   Home Page - Donation Section Styling
+========================================== */
+.home-donation-wrapper {
+  background: linear-gradient(135deg, #f0fdf4, #e8f5e9);
+  padding: 50px 24px;
+  border-radius: 24px;
+  margin: 40px auto;
+  max-width: 1100px;
+  border: 1px solid #b7e4c7;
+  box-shadow: 0 10px 30px rgba(44, 106, 79, 0.08);
+}
+
+.home-donation-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.home-donation-emoji {
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+.home-donation-title {
+  font-size: 28px;
+  color: #1b4332;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.home-donation-subtitle {
+  color: #2d6a4f;
+  font-size: 15px;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Sub-titles */
+.home-section-subtitle {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1b4332;
+  text-align: center;
+  margin: 32px 0 20px;
+}
+
+/* Impact Section Grid */
+.home-impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.home-impact-item {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease;
+}
+
+.home-impact-item:hover {
+  transform: translateY(-4px);
+}
+
+.home-impact-emoji {
+  font-size: 32px;
+  margin-bottom: 6px;
+}
+
+.home-impact-number {
+  font-size: 24px;
+  font-weight: 800;
+  color: #1b4332;
+}
+
+.home-impact-label {
+  font-size: 13px;
+  color: #6c757d;
+  margin-top: 4px;
+}
+
+/* How Steps Grid */
+.home-how-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.home-how-step {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.home-how-emoji {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.home-how-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1b4332;
+  margin-bottom: 6px;
+}
+
+.home-how-desc {
+  font-size: 13px;
+  color: #6c757d;
+  line-height: 1.5;
+}
+
+/* Call to Action Button */
+.home-donation-cta {
+  text-align: center;
+  margin-top: 36px;
+}
+
+.home-donation-btn {
+  background: linear-gradient(135deg, #2d6a4f, #52b788);
+  color: white !important;
+  text-decoration: none;
+  padding: 14px 36px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-block;
+  box-shadow: 0 6px 20px rgba(44, 106, 79, 0.3);
+  transition: all 0.3s ease;
+}
+
+.home-donation-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(44, 106, 79, 0.4);
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .home-impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

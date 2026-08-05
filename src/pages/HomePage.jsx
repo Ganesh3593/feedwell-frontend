@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import HomeDonationSection from '../components/HomeDonationSection'; // 👇 नवीन डोनेशन कॉम्पोनंट इम्पोर्ट केला आहे
 import './Home.css';
 
 const HomePage = () => {
@@ -219,6 +220,11 @@ const HomePage = () => {
 
         </div>
       </section>
+
+      {/* ===========================
+          Donation Section Banner (New Addition)
+      =========================== */}
+      <HomeDonationSection />
 
       {/* ===========================
           Footer

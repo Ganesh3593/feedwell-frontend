@@ -34,6 +34,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/donations" element={<DonationPage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
             <Route path="/food" element={<FoodListingPage />} />
@@ -41,7 +42,6 @@ function App() {
             <Route path="/orders" element={<OrdersPage />} />
             <Route path="/profile" element={<ProfilePage />} />
             <Route path="/admin" element={<AdminDashboard />} />
-            <Route path="/donate" element={<DonationPage />} />
             <Route path="/partner" element={<PartnerDashboard/>} />
           </Routes>
         </BrowserRouter>

@@ -347,6 +347,42 @@
   color: #6c757d;
   margin-bottom: 4px;
 }
+/* ================= Partner Profile Extra Styles ================= */
+
+/* Status Badge Styles */
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.badge-available {
+  background-color: #d8f3dc;
+  color: #1b4332;
+}
+
+.badge-pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+/* Dashboard Button Hover Style */
+.add-food-btn {
+  background-color: #2d6a4f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.add-food-btn:hover {
+  background-color: #1b4332;
+  transform: translateY(-2px);
+}
 
 /* ===========================
    Responsive
